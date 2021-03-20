@@ -1,1 +1,8 @@
 #!/bin/bash
+sudo useradd -m jlee
+sudo groupadd devops-terraform
+usermod -a -G devopos-terraform jlee
+cp ~/Users/jason.lee/secrets/terraform.tfvars. /Users/jason.lee/codes/devops-repository/bash/
+chmod +rwx terraform.tfvars.
+rm ./terraform.tfvars*
+
